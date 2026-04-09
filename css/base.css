@@ -1,0 +1,146 @@
+/* ===================================
+   base.css - Fundamental Styles
+  ==================================== */
+
+/* -----------------------------------
+  1. RESET
+  ------------------------------------ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove default list styles */
+ul {
+  list-style: none;
+}
+
+/* Remove underline from links */
+a {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Responsive images */
+picture {
+  display: block;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Form elements consistency */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -----------------------------------
+  2. @FONT-FACE (Font imports)
+  ------------------------------------ */
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../assets/fonts/josefin-sans/JosefinSans-Light.ttf")
+    format(trueType);
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../assets/fonts/josefin-sans/JosefinSans-Regular.ttf")
+    format(trueType);
+  font-weight: 400;
+  font-display: swap;
+}
+
+/* -----------------------------------
+  3. GLOBAL STYLES (html, body)
+  ------------------------------------ */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  color: var(--clr-text-primary);
+  background-color: var(--clr-bg-body);
+}
+
+/* -----------------------------------
+  4. GLOBAL TYPOGRAPHY (headings)
+  ------------------------------------ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
+/* Default sizes */
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+/* -----------------------------------
+  5. TEXT ELEMENTS
+  ------------------------------------ */
+p {
+  font-size: var(--fs-text-md);
+  color: var(--clr-text-secondary);
+}
+
+/* -----------------------------------
+  6. BASE UTILITIES
+  ------------------------------------ */
+
+.container {
+  inline-size: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+/* Visually hidden but accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
