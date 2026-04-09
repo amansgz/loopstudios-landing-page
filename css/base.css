@@ -80,8 +80,8 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
-  font-weight: var(--font-regular);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
   line-height: 1.5;
   color: var(--clr-text-primary);
   background-color: var(--clr-bg-body);
