@@ -1,0 +1,75 @@
+/* ==========================================
+   creation-item-bg.css 
+
+   - Backgrounds for items mobile and MQ 64rem
+
+  =========================================== */
+
+/* Backgrounds Items */
+
+.item-1 {
+  --bg-img: url("../../assets/images/mobile/image-deep-earth.jpg");
+}
+
+.item-2 {
+  --bg-img: url("../../assets/images/mobile/image-night-arcade.jpg");
+}
+
+.item-3 {
+  --bg-img: url("../../assets/images/mobile/image-soccer-team.jpg");
+}
+
+.item-4 {
+  --bg-img: url("../../assets/images/mobile/image-grid.jpg");
+}
+
+.item-5 {
+  --bg-img: url("../../assets/images/mobile/image-from-above.jpg");
+}
+
+.item-6 {
+  --bg-img: url("../../assets/images/mobile/image-pocket-borealis.jpg");
+}
+
+.item-7 {
+  --bg-img: url("../../assets/images/mobile/image-curiosity.jpg");
+}
+
+.item-8 {
+  --bg-img: url("../../assets/images/mobile/image-fisheye.jpg");
+}
+
+/* 1024px */
+@media (min-width: 64rem) {
+  .item-1 {
+    --bg-img: url("../../assets/images/desktop/image-deep-earth.jpg");
+  }
+
+  .item-2 {
+    --bg-img: url("../../assets/images/desktop/image-night-arcade.jpg");
+  }
+
+  .item-3 {
+    --bg-img: url("../../assets/images/desktop/image-soccer-team.jpg");
+  }
+
+  .item-4 {
+    --bg-img: url("../../assets/images/desktop/image-grid.jpg");
+  }
+
+  .item-5 {
+    --bg-img: url("../../assets/images/desktop/image-from-above.jpg");
+  }
+
+  .item-6 {
+    --bg-img: url("../../assets/images/desktop/image-pocket-borealis.jpg");
+  }
+
+  .item-7 {
+    --bg-img: url("../../assets/images/desktop/image-curiosity.jpg");
+  }
+
+  .item-8 {
+    --bg-img: url("../../assets/images/desktop/image-fisheye.jpg");
+  }
+}

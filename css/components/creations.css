@@ -1,0 +1,108 @@
+/* ===================================
+   creations.css 
+
+  - Section creations
+  - Creations header
+  - Grid elements 
+  - Hover states for items
+  - Hover states for items title
+  - Creations footer
+  - Media queries
+  ==================================== */
+
+@import "./buttons.css";
+@import "./creation-item-bg.css";
+
+/* Section creations */
+.creations {
+  padding-block: var(--spacing-400);
+}
+
+/* Creations header */
+.creations__header {
+  text-align: center;
+}
+
+.btn--desktop {
+  display: none;
+}
+
+/* Grid elements */
+.creation-item {
+  display: flex;
+  align-items: flex-end; /* for H3 */
+  padding: var(--spacing-125); /* for H3 */
+
+  aspect-ratio: 654 / 240;
+  inline-size: 100%;
+  max-inline-size: 654px;
+  margin-inline: auto;
+
+  background-image: var(
+    --bg-img
+  ); /* each --bg-img defined on creations-items.css */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.creation-item h3 {
+  inline-size: 10ch;
+}
+
+.item-4 h3 {
+  inline-size: 8ch;
+}
+
+/* Hover states for items */
+.creation-item:hover {
+  background-image:
+    linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    var(--bg-img);
+}
+
+/* Hover states for items title */
+.creation-item h3 {
+  color: var(--clr-text-white);
+}
+
+.creation-item:hover h3 {
+  color: var(--clr-text-primary);
+}
+
+/* Creations footer */
+.creations__footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media queries */
+/* 640px */
+@media (min-width: 40rem) {
+  .creations__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* Show creations header btn desktop */
+  .btn--desktop {
+    display: block;
+  }
+
+  /* Hide creations footer btn mobile */
+  .creations__footer {
+    display: none;
+  }
+}
+
+/* 1024px */
+@media (min-width: 64rem) {
+  .creation-item {
+    aspect-ratio: 256 / 450;
+
+    max-inline-size: none;
+  }
+}

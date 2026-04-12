@@ -1,3 +1,33 @@
 /* ===================================
    layout.css 
   ==================================== */
+
+.creations__container {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-300);
+}
+
+.creations-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  gap: var(--spacing-150);
+}
+
+/* 640px -  1008px*/
+@media (min-width: 40rem) and (max-width: 63rem) {
+  .creations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 1024px */
+@media (min-width: 64rem) {
+  .creations-grid {
+    grid-template-columns: repeat(4, 1fr);
+
+    max-inline-size: 75rem; /* 1200px */
+  }
+}
