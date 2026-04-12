@@ -4,7 +4,7 @@
 
 :root {
   /* Colors */
-  --clr-white: hsl(0, 0%, 100%);
+  --clr-white: hsl(0, 0%, 98%);
   --clr-black: hsl(0, 0%, 0%);
   --clr-grey-200: hsl(0, 0%, 85%);
 
@@ -22,9 +22,11 @@
   --clr-hover-cta: var(--clr-black);
 
   /* Spacings */
-  --spacing-100: 1rem;
+  --spacing-100: 1rem; /* 16px */
+  --spacing-125: 1.25rem; /* 20px */
   --spacing-150: 1.5rem; /* 24px */
   --spacing-200: 2rem; /* 32px */
+  --spacing-250: 2.5rem; /* 40px */
   --spacing-300: 3rem; /* 48px */
   --spacing-400: 4rem; /* 64px */
   --spacing-600: 6rem; /* 96px */
