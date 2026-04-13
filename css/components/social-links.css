@@ -1,0 +1,53 @@
+/* ===================================
+   social-links.css 
+  ==================================== */
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-200);
+}
+
+.social__item {
+  position: relative;
+}
+
+/* social icon line with pseudoelement */
+.social__item::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-end: -10px;
+
+  inline-size: 0;
+  block-size: 2px;
+  background-color: var(--clr-bg-white);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.social__icon {
+  inline-size: 1.3rem;
+  block-size: 1.3rem;
+
+  color: var(--clr-text-white);
+  transition: color 0.2s ease;
+}
+
+/* Hover states */
+.social__item:hover::after {
+  inline-size: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social__item {
+    transition-duration: 0.01ms;
+  }
+}
+
+@media (min-width: 48rem) {
+  .social-list {
+    justify-content: flex-end;
+  }
+}

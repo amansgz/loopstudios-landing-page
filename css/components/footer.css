@@ -1,0 +1,50 @@
+/* ===================================
+   footer.css 
+  ==================================== */
+
+@import "./navigation.css";
+@import "./social-links.css";
+
+.footer {
+  padding-block: var(--spacing-400);
+  background-color: var(--clr-bg-footer);
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  color: var(--clr-text-white);
+}
+
+.footer__logo {
+  margin-block-end: var(--spacing-200);
+}
+
+.footer__attribution {
+  margin-block-start: var(--spacing-200);
+  font-size: 0.9rem;
+}
+
+.challenge-attribution {
+  padding-block: var(--spacing-100);
+  text-align: center;
+}
+
+.challenge-attribution__link:hover,
+.challenge-attribution__link:focus-visible {
+  text-decoration: underline;
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    padding-block: var(--spacing-250);
+  }
+
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
