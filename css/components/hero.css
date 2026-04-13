@@ -1,0 +1,41 @@
+/* ===================================
+   hero.css 
+  ==================================== */
+
+.hero {
+  background-image: url("../../assets/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 80vh;
+}
+
+.hero__content {
+  padding: var(--spacing-100);
+  inline-size: 90%;
+  border: 1px solid var(--clr-border-white);
+}
+
+.hero__title {
+  color: var(--clr-text-white);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    background-image: url("../../assets/images/desktop/image-hero.jpg");
+  }
+
+  .hero__container {
+    justify-content: flex-start;
+  }
+
+  .hero__content {
+    inline-size: 39%;
+  }
+}
