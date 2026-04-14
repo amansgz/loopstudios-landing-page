@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Live Site URL: [https://amansgz.github.io/loopstudios-landing-page](https://amansgz.github.io/loopstudios-landing-page)
-- Solution URL: [https://www.frontendmentor.io/solutions/css-loopstudios-landing-page-](https://www.frontendmentor.io/solutions/css-loopstudios-landing-page-)
+- Solution URL: [https://www.frontendmentor.io/solutions/css-loopstudios-landing-page-brZTLg0W7b](https://www.frontendmentor.io/solutions/css-loopstudios-landing-page-brZTLg0W7b)
 
 ## My process
 
