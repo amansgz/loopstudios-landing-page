@@ -7,13 +7,15 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  margin-block-start: -5rem;
 }
 
 .hero__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  block-size: 80vh;
+  block-size: 100vh;
 }
 
 .hero__content {

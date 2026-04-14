@@ -23,17 +23,17 @@
 <body>
 
   <header class="header">
-    <div class="container">
+    <div class="header__container">
 
       <!-- Logo -->
       <img src="./assets/images/logo.svg" alt="Loopstudios" width="100" height="36">
 
       <!-- Navigation -->
-      <nav class="primary-nav" id="nav">
+      <nav class="header__nav" id="nav">
 
         <!-- Mobile hamburger btn -->
-        <button class="toggle-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
-          aria-controls="main-menu" id="toggleBtn">
+        <button class="nav__toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="main-menu" id="nav-toggle">
 
           <img class="icon  icon--hamburger" src="./assets/icons/icon-hamburger.svg" alt="" aria-hidden="true"
             width="24" height="24">
@@ -43,26 +43,26 @@
         </button>
 
 
-        <ul class="menu">
+        <ul class="header-menu" aria-labelledby="nav-toggle" id="main-menu">
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">About</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">About</a>
           </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Careers</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Careers</a>
           </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Events</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Events</a>
           </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Products</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Products</a>
           </li>
 
-          <li class="menu__item">
-            <a class="menu__link" href="#">Support</a>
+          <li class="header-menu__item">
+            <a class="header-menu__link" href="#">Support</a>
           </li>
 
         </ul>

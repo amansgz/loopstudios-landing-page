@@ -12,6 +12,7 @@
   --clr-bg-body: var(--clr-white);
   --clr-bg-footer: var(--clr-black);
   --clr-bg-white: var(--clr-white);
+  --clr-bg-dark: var(--clr-black);
 
   --clr-text-primary: var(--clr-black);
   --clr-text-secondary: var(--clr-grey-200);

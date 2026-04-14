@@ -12,6 +12,7 @@
 @import "layout.css";
 
 /* 4. COMPONENTS - BEM blocks */
+@import "components/header.css";
 @import "components/hero.css";
 @import "components/creations.css";
 @import "components/about.css";
