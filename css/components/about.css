@@ -20,7 +20,7 @@
   gap: var(--spacing-200);
 
   inline-size: 95%;
-  max-inline-size: 40rem;
+  max-inline-size: 35rem;
 
   text-align: center;
 }
@@ -29,7 +29,7 @@
   max-inline-size: 25ch;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 70rem) {
   .about__container {
     flex-direction: row;
     position: relative; /* for about content box */
@@ -43,6 +43,9 @@
     position: absolute;
     inset-inline-start: 45%;
     inset-block-end: 0;
+
+    inline-size: 55%;
+    max-inline-size: 40rem;
 
     padding-inline-start: var(--spacing-400);
     padding-block-start: var(--spacing-400);
